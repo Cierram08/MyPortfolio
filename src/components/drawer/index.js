@@ -6,12 +6,11 @@ import {
     ListItemText,
 } from "@mui/material";
 import { useUIContext } from "../../context/ui";
+import { DrawerCloseButton } from "../../styles/navbar";
 import CloseIcon from "@mui/icons-material/Close";
-import { DrawerCloseButton } from "../../styles/appbar";
-import { lighten } from "polished";
-import { Colors } from "../../styles/theme";
+import { Colors } from "../../theme";
 
-export default function AppDrawer() {
+export default function NavDrawer() {
     const { drawerOpen, setDrawerOpen } = useUIContext();
 
     return (
@@ -19,9 +18,10 @@ export default function AppDrawer() {
             {drawerOpen && (
                 <DrawerCloseButton onClick={() => setDrawerOpen(false)}>
                     <CloseIcon
+                        className="testing"
                         sx={{
                             fontSize: "2.5rem",
-                            color: lighten(0.09, Colors.secondary),
+                            color: Colors.white,
                         }}
                     />
                 </DrawerCloseButton>

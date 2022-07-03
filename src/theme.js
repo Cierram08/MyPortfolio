@@ -1,3 +1,4 @@
+import { createTheme } from "@material-ui/core";
 import { lighten } from "polished";
 
 export const Colors = {
@@ -13,62 +14,43 @@ export const Colors = {
     border: "#DDDFE1",
     inverse: "#2F3D4A",
     shaft: "#333",
-///////
+    ///////
     //GRAYS//
     //////
     dim_grey: "#696969",
     dove_grey: "#d5d5d5",
     body_bg: "#f3f6f9",
     light_grey: "#e8eaf6",
-///////
+    dark_grey: "#616161",
+    ///////
     //Solid Color//
     //////
     white: "#fff",
     black: "#000",
-
-
 };
 
-export const theme = {
+export const theme = createTheme({
     palette: {
-        primary: {
-            main: Colors.primary
-        },
-        secondary: {
-            main: Colors.secondary
-        }
     },
-    
+
     components: {
         MuiButton: {
             defaultProps: {
                 disableRipple: true,
-                disableElevation: true
+                disableElevation: true,
             },
         },
         MuiDrawer: {
-            
             styleOverrides: {
                 paper: {
-                    top: 0,
-                    right: 0,
-                    position: 'absolute',
                     width: 250,
-                    background: Colors.primary,
-                    color: Colors.secondary,
-                    borderRadius: '0px 100px 0px 0px',
-                    borderRight: `1px solid ${Colors.primary}`
-                }
-
-            }
+                    background: Colors.dark_grey,
+                    color: Colors.white,
+                    borderRadius: '0px 100px 1px',
+                    borderRight: '1px solid $(Colors.dark_grey)'
+                },
+            },
         },
-        MuiDivider: {
-            styleOverrides: {
-                root: {
-                  borderColor: lighten(0.2, Colors.primary)
-                }
-              }
-        }
-    }
+    },
 
-};
+})

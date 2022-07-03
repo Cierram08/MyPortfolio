@@ -1,12 +1,13 @@
 import "./App.css";
 import { Container, Stack } from "@mui/material";
-import Appbar from "./components/appbar";
+import Navbar from "./components/navbar";
 import { ThemeProvider } from "@mui/system";
-import AppDrawer from "./components/drawer";
+import NavDrawer from "./components/drawer";
 import { useEffect } from "react";
 import theme from "./styles/theme";
-import BootstrapCarousel from "./components/BoostrapCarousel";
-
+import { UIProvider } from "./context/ui";
+import Footer from "./components/footer";
+import Banner from "./components/banner";
 
 
 function App() {
@@ -14,17 +15,17 @@ function App() {
         document.title = "From Beauty to Tech - Home";
     }, []);
     return (
-        
         <ThemeProvider theme={theme}>
-            
             <Container>
-                <Stack>
-                    <Appbar />
-                    <BootstrapCarousel />
-                    <AppDrawer />
-                </Stack>
+                <UIProvider>
+                    <Stack>
+                        <Navbar />
+                        <Banner />
+                        <NavDrawer />
+                    </Stack>
+                </UIProvider>
+                <Footer />
             </Container>
-
         </ThemeProvider>
     );
 }

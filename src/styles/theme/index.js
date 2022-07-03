@@ -64,10 +64,10 @@ const theme = createTheme({
       styleOverrides: {
         paper: {
           width: DrawerWidth,          
-          background: Colors.primary,
-          color: Colors.secondary,
+          background: Colors.dove_gray,
+          color: Colors.black,
           borderRadius: '0px 100px 0px 0px',
-          borderRight: `1px solid ${Colors.primary}`
+          borderRight: `1px solid ${Colors.light_gray}`
         }
       }
     },
@@ -77,25 +77,6 @@ const theme = createTheme({
           borderColor: lighten(0.2, Colors.primary)
         }
       }
-    },
-    MyShopButton: {
-      styleOverrides: {
-        root: {
-          color: Colors.white,
-        },
-        primary: {
-          background: Colors.primary,
-          "&:hover": {
-            background: lighten(0.05, Colors.primary),
-          },
-        },
-        secondary: {
-          background: `${Colors.secondary}`,
-          "&:hover": {
-            background: lighten(0.05, Colors.primary),
-          },
-        },
-      },
     },
   },
 });
