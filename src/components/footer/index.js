@@ -18,9 +18,12 @@ export default function Footer() {
                 fontSize: { xs: "12px", md: "14px" },
             }}
         >
-            <Grid  container spacing={2} justifyContent="flex">
+            <Grid container spacing={2} justifyContent="flex">
                 <Grid item md={6} lg={4}>
-                    <FooterTitle variant="body1"> Let's Connect!</FooterTitle>
+                    <FooterTitle variant="body1" color="b`lack">
+                        {" "}
+                        Let's Connect!
+                    </FooterTitle>
 
                     <Box
                         sx={{
@@ -28,10 +31,26 @@ export default function Footer() {
                             color: Colors.dove_grey,
                         }}
                     >
-                        
-                        <LinkedInIcon sx={{ mr: 1}} onClick={event =>  window.location.href="https://www.linkedin.com/in/cierraelle"} />
-                        <GitHubIcon sx={{ mr: 1}} onClick={event =>  window.location.href="https://github.com/cierram08"} />
-                        <TwitterIcon onClick={event =>  window.location.href="https://twitter.com/thetechbeauty"}/>
+                        <LinkedInIcon
+                            sx={{ mr: 1 }}
+                            onClick={(event) =>
+                                (window.location.href =
+                                    "https://www.linkedin.com/in/cierraelle")
+                            }
+                        />
+                        <GitHubIcon
+                            sx={{ mr: 1 }}
+                            onClick={(event) =>
+                                (window.location.href =
+                                    "https://github.com/cierram08")
+                            }
+                        />
+                        <TwitterIcon
+                            onClick={(event) =>
+                                (window.location.href =
+                                    "https://twitter.com/thetechbeauty")
+                            }
+                        />
                     </Box>
                 </Grid>
             </Grid>

@@ -11,7 +11,7 @@ export default function BootstrapCarousel() {
                     <img
                         className="d-block mx-auto"
                         style={{ height: 500 }}
-                        src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/93941934_1443857389134286_4678164179364872192_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=eM93i6VYxPsAX8QERdc&tn=U0NvAz32PtYG-vQt&_nc_ht=scontent-lax3-2.xx&oh=00_AT-SM91WW6KBQVdPNAaqhWv2ThCc5Hgsgq0KVVsyK4YyIw&oe=62D321D3"
+                        src={require('../images/cie6.jpg')}
                         alt="First slide"
                     />
                 </Carousel.Item>
@@ -20,7 +20,7 @@ export default function BootstrapCarousel() {
                     <img
                         className="d-block mx-auto"
                         style={{ height: 500 }}
-                        src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.6435-9/92944868_1435113953341963_4654104262198951936_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=6RCfOJ98WcAAX9lsLf-&tn=U0NvAz32PtYG-vQt&_nc_ht=scontent-lax3-2.xx&oh=00_AT9FIR5qQcfSy27I6-EE3o4E1q9LpkjJrVSpv1qyc30cWw&oe=62D2579B"
+                        src={require('../images/makeup1.jpg')}
                         alt="Second slide"
                     />
                 </Carousel.Item>
