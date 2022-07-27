@@ -20,7 +20,7 @@ export default function Footer() {
         >
             <Grid container spacing={2} justifyContent="flex">
                 <Grid item md={6} lg={4}>
-                    <FooterTitle variant="body1" color="b`lack">
+                    <FooterTitle variant="body1" color="black">
                         {" "}
                         Let's Connect!
                     </FooterTitle>
