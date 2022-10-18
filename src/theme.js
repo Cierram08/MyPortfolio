@@ -1,5 +1,4 @@
 import { createTheme } from "@material-ui/core";
-import { lighten } from "polished";
 
 export const Colors = {
     primary: "#5f2c3e",
@@ -30,8 +29,7 @@ export const Colors = {
 };
 
 export const theme = createTheme({
-    palette: {
-    },
+    palette: {},
 
     components: {
         MuiButton: {
@@ -46,11 +44,10 @@ export const theme = createTheme({
                     width: 250,
                     background: Colors.dark_grey,
                     color: Colors.white,
-                    borderRadius: '0px 100px 1px',
-                    borderRight: '1px solid $(Colors.dark_grey)'
+                    borderRadius: "0px 100px 1px",
+                    borderRight: "1px solid $(Colors.dark_grey)",
                 },
             },
         },
     },
-
-})
+});

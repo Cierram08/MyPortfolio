@@ -6,24 +6,21 @@ import "@fontsource/montez";
 
 //container section
 export const NavbarContainer = styled(Box)(() => ({
-    display: "flex",
     marginTop: 1,
     alignItems: "center",
     padding: "1px 8px",
-    textAlign: "center"
-
+    textAlign: "center",
 }));
 
 //header section
 
 export const NavbarHeader = styled(Typography)(() => ({
-    padding: "4px",
+    paddingTop: "10px",
     flexGrow: 1,
     fontSize: "4em",
     fontFamily: '"Montez", "cursive"',
     color: Colors.secondary,
-    textAlign: "center"
-    
+    textAlign: "center",
 }));
 
 export const MyList = styled(List)(({ type }) => ({
