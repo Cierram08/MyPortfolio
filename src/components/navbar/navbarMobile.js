@@ -10,7 +10,7 @@ export default function NavbarMobile({ matches }) {
     return (
         <NavbarContainer>
             <IconButton onClick={() => setDrawerOpen(true)}>
-                <MenuIcon />
+                <MenuIcon /> 
             </IconButton>
             <NavbarHeader textAlign={"center"} variant="h4">
                 From Beauty To Tech

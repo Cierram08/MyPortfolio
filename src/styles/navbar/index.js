@@ -6,18 +6,27 @@ import "@fontsource/montez";
 
 //container section
 export const NavbarContainer = styled(Box)(() => ({
-    marginTop: 1,
+    display: "flex",
+    justifyContent: "space-between", // Aligns IconButton to the left and Actions to the right
     alignItems: "center",
-    padding: "1px 8px",
+    height: "20vh",
+    marginTop: 20,
+    padding: "8px 16px",
     textAlign: "center",
+    // Add padding to the left for mobile to avoid overlap with the fixed icon
+    paddingLeft: "60px", // Push content to the right on mobile
+    '@media (max-width: 600px)': {
+        flexDirection: "row", // Adjust padding for small screens (mobile)
+    },
 }));
 
 //header section
 
+
 export const NavbarHeader = styled(Typography)(() => ({
     paddingTop: "10px",
-    flexGrow: 1,
     fontSize: "4em",
+    justifyContent: "center", 
     fontFamily: '"Montez", "cursive"',
     color: Colors.secondary,
     textAlign: "center",
