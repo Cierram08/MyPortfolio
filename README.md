@@ -33,7 +33,7 @@ This project is a modern, responsive portfolio designed to showcase my technical
 
     ```
 
-2.  Navigate to the project folder:
+2. Navigate to the project folder:
 
     ```bash
     cd MyPortfolio
@@ -41,13 +41,29 @@ This project is a modern, responsive portfolio designed to showcase my technical
     ```
 
 3. Install dependencies:
-   npm install
+
+    ```bash
+    npm install
+
+    ```
 
 4. Start the development server:
-   npm start
+
+    ```bash
+    npm start
+
+    ```
 
 5. To build the app for production:
-   npm run build
+
+    ```bash
+    npm run build
+
+    ```
 
 6. To deploy the app to GitHub Pages:
-   npm run deploy
+
+    ```bash
+    npm run deploy
+
+    ```
