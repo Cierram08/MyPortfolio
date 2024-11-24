@@ -36,13 +36,11 @@ This project is a modern, responsive portfolio designed to showcase my technical
 2.  Navigate to the project folder:
 
     ```bash
-   cd MyPortfolio
+    cd MyPortfolio
 
     ```
 
-3. 
-
-Install dependencies:
+3. Install dependencies:
    npm install
 
 4. Start the development server:
