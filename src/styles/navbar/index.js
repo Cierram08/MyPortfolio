@@ -2,7 +2,7 @@ import { List, Typography, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import { Colors } from "../theme";
-import "@fontsource/montez";
+import "@fontsource/spicy-rice";
 
 //container section
 export const NavbarContainer = styled(Box)(() => ({
@@ -18,9 +18,10 @@ export const NavbarHeader = styled(Typography)(() => ({
     paddingTop: "10px",
     flexGrow: 1,
     fontSize: "4em",
-    fontFamily: '"Montez", "cursive"',
+    fontFamily: '"Spicy Rice", "cursive"',
     color: Colors.secondary,
     textAlign: "center",
+    textShadow: "2px 2px 4px rgba(0, 0, 0, 0.4)",
 }));
 
 export const MyList = styled(List)(({ type }) => ({
@@ -41,8 +42,15 @@ export const ActionsIconsContainerMobile = styled(Box)(() => ({
     borderTop: `1px solid $(Colors.border)`,
 }));
 
-export const ActionsIconsContainerDesktop = styled(Box)(() => ({
-    flexGrow: 0,
+export const ActionsIconsContainerDesktop = styled(Box)(({ theme }) => ({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexGrow: 1,
+    [theme.breakpoints.down("md")]: {
+        paddingLeft: theme.spacing(2), // Example adjustment for tablet
+        paddingRight: theme.spacing(2),
+    },
 }));
 
 export const DrawerCloseButton = styled(IconButton)(() => ({

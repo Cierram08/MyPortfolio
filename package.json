@@ -7,6 +7,7 @@
         "@emotion/react": "^11.9.0",
         "@emotion/styled": "^11.8.1",
         "@fontsource/montez": "^4.5.8",
+        "@fontsource/spicy-rice": "^5.1.0",
         "@mui/icons-material": "^5.8.0",
         "@mui/material": "^5.8.0",
         "@testing-library/jest-dom": "^5.16.4",

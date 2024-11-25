@@ -1,4 +1,4 @@
-import { Divider, ListItemIcon, ListItemButton } from "@mui/material";
+import { ListItemIcon, ListItemButton } from "@mui/material";
 import {
     MyList,
     ActionsIconsContainerMobile,
@@ -12,7 +12,7 @@ export default function Actions({ matches }) {
 
     return (
         <Component>
-            <MyList type="row">
+            <MyList>
                 <ListItemButton
                     sx={{
                         justifyContent: "center",
@@ -23,9 +23,8 @@ export default function Actions({ matches }) {
                             display: "flex",
                             justifyContent: "center",
                         }}
-                    ></ListItemIcon>
+                    />
                 </ListItemButton>
-                <Divider orientation="vertical" flexItem />
                 <ListItemButton
                     sx={{
                         justifyContent: "center",
@@ -36,14 +35,20 @@ export default function Actions({ matches }) {
                             display: "flex",
                             justifyContent: "center",
                         }}
-                    ></ListItemIcon>
+                    />
                 </ListItemButton>
-                <Divider orientation="vertical" flexItem />
                 <ListItemButton
                     sx={{
                         justifyContent: "center",
                     }}
-                ></ListItemButton>
+                >
+                    <ListItemIcon
+                            sx={{display: "flex",
+                            justifyContent: "center",
+                        }}
+                    />
+
+                </ListItemButton>
             </MyList>
         </Component>
     );
