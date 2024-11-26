@@ -7,23 +7,25 @@ import { useState, useEffect } from "react";
 
 export default function NavbarMobile({ matches }) {
     const { setDrawerOpen } = useUIContext();
-    const [ zoomIn, setZoomIn ] = useState(false);
+    const [zoomIn, setZoomIn] = useState(false);
 
-     // Trigger the zoom effect after the component is mounted
+    // Trigger the zoom effect after the component is mounted
     useEffect(() => {
         setZoomIn(true);
     }, []);
 
     return (
         <NavbarContainer sx={{ paddingTop: "16px" }}>
-            <IconButton onClick={() => setDrawerOpen(true)}
-                sx={{ position: "absolute", 
+            <IconButton
+                onClick={() => setDrawerOpen(true)}
+                sx={{
+                    position: "absolute",
                     left: 16,
                     right: matches ? "auto" : 0, // Center align on tablet
                     marginLeft: matches ? "auto" : 0, // Center alignment
                     marginRight: matches ? "auto" : 0, // Center alignment
                     top: "50px",
-                }}       
+                }}
             >
                 <MenuIcon />
             </IconButton>

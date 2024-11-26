@@ -3,7 +3,7 @@ import { NavbarContainer, NavbarHeader } from "../../styles/navbar";
 import Actions from "./actions";
 import { useState, useEffect } from "react";
 
-    
+
 
 export default function NavbarDesktop({ matches }) {
 
